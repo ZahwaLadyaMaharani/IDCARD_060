@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>ID Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-size: cover;
+                background-position: center;
+               
+                font-family: sans-serif;
+              }
+              .login {
+                position: fixed;
+                top: 50%;
+                left: 45%;
+                transform: translate(-30%, -50%);
+                background: #FFE4E1;
+                padding: 50px;
+                width: 500px;
+                border-radius: 15px;
+              }
+             
+              .login h2 {
+                text-align: center;
+                color: black;
+                font-size: 30px;
+                font-family: sans-serif;
+                letter-spacing: 3px;
+                padding-top: 0;
+                margin-top: -20px;
+              }
+              .box-login {
+                  
+                  
+                justify-content:space-between;
+                margin: 10px;
+                
+              }
+              .box-login p{
+                  text-align: left;
+              }
+             
+              .btn-login {
+                margin-left: 10px;
+                margin-bottom: 20px;
+                background: none;
+                border: 1px solid white;
+                width: 92.5%;
+                padding: 10px;
+                color: white;
+                font-size: 18px;
+                letter-spacing: 3px;
+                cursor: pointer;
+                }
+        
+           
+              
+              
+              .gmbr{
+                  float: right;
+                  width: 112px;
+                  height: 145px;
+                  
+                    
+              }
+
+            
+    
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            
+                <div class="avatar">
+                    <i class="fa fa-user"></i>
+                </div>
+
+                <h2>Kartu Tanda Penduduk</h2>
+                
+                <div class="box-login">
+                    
+                    <img th:src="${kimg}" class="gmbr"/> 
+                  
+                </div>
+
+                <div class="box-login">
+                    
+                    Nama Lengkap : <p th:text="${knm}"></p>
+                  
+                </div>
+
+                <div class="box-login">
+                    Tanggal Lahir : <p th:text="${ktgl}"></p>
+                  
+                </div>
+                
+        </div>
+    </body>
+</html>
